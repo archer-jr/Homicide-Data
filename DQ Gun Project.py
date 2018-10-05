@@ -1,7 +1,7 @@
 import csv
 import datetime
-
-f = open("/Users/James/Downloads/guns.csv", 'r')
+f = open("guns.csv", 'r')
+# f = open("/Users/James/Downloads/guns.csv", 'r')
 gun_data = list(csv.reader(f))
 header = gun_data[0]
 data = gun_data[1:]
@@ -64,8 +64,8 @@ mapping['Native American/Native Alaskan'] = 3739506
 mapping['White'] = 197318956
 print(mapping)
 
-
-g = open("/Users/James/Downloads/census.csv", 'r')
+g = open("census.csv", 'r')
+# g = open("/Users/James/Downloads/census.csv", 'r')
 census = list(csv.reader(g))
 
 race_per_hundredk = {}
