@@ -11,7 +11,7 @@ gun_deaths_years = {}
 for values in data:
     year = values[1]
     if year in gun_deaths_years:
-        gun_deaths_years[year] = gun_deaths_years[year] + 1
+        gun_deaths_years[year] += 1
     else:
         gun_deaths_years[year] = 1
 # print(gun_deaths_years)
@@ -26,7 +26,7 @@ print(dates[:5])
 date_counts = {}
 for values in dates:
     if values in date_counts:
-        date_counts[values] = date_counts[values] + 1
+        date_counts[values] += 1
     else:
         date_counts[values] = 1
 print(date_counts)
@@ -37,7 +37,7 @@ sex_counts = {}
 for values in data:
     sex = values[5]
     if sex in sex_counts:
-        sex_counts[sex] = sex_counts[sex] + 1
+        sex_counts[sex] +=  1
     else:
         sex_counts[sex] = 1
 print(sex_counts)
@@ -46,7 +46,7 @@ race_counts = {}
 for values in data:
     race = values[7]
     if race in race_counts:
-        race_counts[race] = race_counts[race] + 1
+        race_counts[race] += 1
     else:
         race_counts[race] = 1
 print(race_counts)
@@ -88,7 +88,7 @@ for i, race in enumerate(races):
     if race not in homicide_race_counts:
         homicide_race_counts[race] = 0
     if intents[i] == "Homicide":
-        homicide_race_counts[race] = homicide_race_counts[race] + 1
+        homicide_race_counts[race] += 1
 
 homicide_per_hundredk = {}
 for values in homicide_race_counts.keys():
